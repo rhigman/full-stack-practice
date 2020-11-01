@@ -1,5 +1,5 @@
 # full-stack-practice
-Practice full-stack application.
+Practice full-stack application. Allows user to browse for an XML file via the web client and upload it to the server. Server checks that the file is valid XML and the root node is named `test-root`. On successful upload, web client displays values of any `test-identifier` tags in the file; on failure, displays relevant error message.
 
 How to run this software:
 
