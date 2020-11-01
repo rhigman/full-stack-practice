@@ -1,0 +1,25 @@
+<!--
+webapp.html
+Simple client application for storing uploaded documents
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Upload documents</title>
+    </head>
+    <body>
+        <!-- Import accompanying Javascript file -->
+        <script type="text/javascript" src="webapp.js"></script>
+        <!-- File picker and upload button -->
+        <h2>Select file to upload</h2>
+        <form id="uploadform" enctype=multipart/form-data>
+            <!-- Encourage user to select XML files -->
+            <input id="upload" type="file" name="uploadedfile" accept=".xml"><br>
+            <input type="button" name="uploadbutton" value="Upload file" onclick="upload_file()" />
+        </form>
+        <!-- Display result of upload -->
+        <h2>Last upload result:</h2>
+        <p id="result"></p>
+    </body>
+</html>
